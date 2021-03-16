@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import '../App.css';
 class Lockin extends Component {
 
     handleLockin = () => {
@@ -9,7 +9,7 @@ class Lockin extends Component {
     }
     render(){
         return (
-            <div >
+            <div className='lockin-roster' >
                 <img src={`https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/${this.props.champion.key}.png`} onClick ={this.handleLockin} alt={this.props.champion.name} />                
             </div>
         )

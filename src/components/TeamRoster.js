@@ -1,6 +1,7 @@
 import React from 'react';
 import Lockin from './Lockin'
 import EditRoster from './EditRoster'
+import '../App.css';
 
 const TeamRoster = props => {
     const mapChampions = props.champions.map((champion, i) => (
@@ -21,8 +22,8 @@ const TeamRoster = props => {
 
     return (
         <div>
-            <h1>Current Team</h1>
-            <div className='champion-roster'>                
+            <h1 className="banner">Current Team</h1>
+            <div className='team-roster'>                
                 {mapChampions}
             </div>
         </div>

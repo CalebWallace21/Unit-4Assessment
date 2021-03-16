@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import Lockin from './Lockin'
+import '../App.css';
 class Champions extends Component {
     constructor(props){
         super(props);

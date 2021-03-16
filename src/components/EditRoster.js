@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import '../App.css';
 class EditRoster extends Component {
     constructor(props){
         super(props);
@@ -27,16 +27,16 @@ class EditRoster extends Component {
                     <input
                         value={this.state.nameInput}
                         onChange={e => this.handleInput(e.target.value)} />
-                    <button onClick={() => this.handleEdit(this.props.champion.id)}>Submit</button>
+                    <button className='submit-button' onClick={() => this.handleEdit(this.props.champion.id)}>Submit</button>
                 </div>
             )
             : (
                 <div>
                 <p>{this.props.champion.name}</p>
-                <button onClick={this.handleToggle}>Edit Name</button>
+                <button className='edit-button' onClick={this.handleToggle}>Edit Name</button>
             </div>
             )}
-            <button onClick={() => this.props.deleteFn(this.props.champion.id)}>Delete</button>
+            <button className="delete-button" onClick={() => this.props.deleteFn(this.props.champion.id)}>Delete</button>
             </div>
         )
     }

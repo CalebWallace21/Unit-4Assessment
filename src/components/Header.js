@@ -1,10 +1,10 @@
 import '../App.css';
 import React from 'react';
-
+import '../App.css';
 export default function Header (){
     return(
      <div className='header'>
-         <h1>Champion Select</h1>
+         <h1 className="banner">Champion Select</h1>
     </div>
     )
 }

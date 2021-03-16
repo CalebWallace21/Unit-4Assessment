@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #676ae6;
 }
 
 .App-logo {
@@ -35,4 +36,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+.champion-roster{
+  display: flex;
+  justify-content: center;
+  background-color: #24639f;  
+}
+
+.submit-button:hover{
+  background-color:red
+}
+.edit-button:hover{
+  background-color: red
+}
+.delete-button:hover{
+  background-color: blue;
+  color:white;
+}
+.team-roster{
+  display: flex;
+  justify-content: center;
+  background-color: #535bfa;
+  font-weight: bold;
+}
+.header {
+  display: flex;
+  justify-content: center;
 }
